@@ -1,5 +1,6 @@
 FROM babim/centosbase:6
 
+RUN yum install -y wget bash && cd / && wget --no-check-certificate https://raw.githubusercontent.com/babim/docker-tag-options/master/z%20SCRIPT%20AUTO/option.sh
 # install
 RUN wget -O monyog.rpm 'https://www.webyog.com/downloadtracker?wy=1551179&pType=RPM&bit=64' && \
     yum install -y monyog.rpm && rm -f monyog.rpm && yum clean all && service MONyogd stop
