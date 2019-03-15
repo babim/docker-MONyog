@@ -1,4 +1,4 @@
-FROM babim/centos6base
+FROM babim/centosbase:6
 
 # install
 RUN wget -O monyog.rpm 'https://www.webyog.com/downloadtracker?wy=1551179&pType=RPM&bit=64' && \
